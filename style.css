@@ -23,6 +23,8 @@ body{
      font-size: 16px;
      color: rgb(27, 31, 26);
      text-decoration: none;
+     background: transparent;
+     border: none;
  }
  
  .center{
@@ -66,11 +68,46 @@ body{
  .card{
      width: 18rem; 
      margin:2vh  1vw;
+     padding: 1em;
+     /* box-shadow: 2px 2px 5px 2px #1a1a1a; */
+ }
+ .card:hover{
+    box-shadow: 3px 8px 15px 3px #1a1a1a;
  }
  .card-img{
   width: 100%;
  }
 
+ .long{
+     /* height: fit-content; */
+     /* border: 1px solid black; */
+     margin: 2vw;
+     position: relative;
+ }
+ .long> img{
+     height: 50vh;
+     margin: 5vh 2vw;
+     position: relative;
+     float: inline-start;
+ }
+ .long>p{
+     position: absolute;
+     right: 15vw;
+     float: right;
+     font-size: 5rem;
+     margin:10vh 5vw;
+ }
+ .long>button{
+    position: absolute;
+    background-color:#126E82;
+    color:white;
+    border-radius: 50px;
+    float: right;
+    padding:1vh 5vw;
+    top: 30vh;
+    right: 18vw;
+
+ }
  /* FOOTER  */
  footer{
      float: left;
