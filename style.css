@@ -1,3 +1,26 @@
+html::-webkit-scrollbar {
+    width: 10px;
+  }
+
+html::-webkit-scrollbar-track {
+    background: rgba(156, 227, 236, 0.527);
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgba(121, 240, 248, 0.788);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:hover {
+    background: rgb(36, 177, 219);
+    border-radius: 10px;
+  }
+
+html::-webkit-scrollbar-thumb:active {
+    background: rgb(20, 103, 182);
+    border-radius: 10px;
+  }
 body{
      /* height: 500vh; */
      margin: 0;
@@ -64,6 +87,7 @@ body{
      align-items: center;
      align-self: stretch;
      margin: 0vh 0vw;
+        
  }
  .card{
      width: 18rem; 
@@ -81,6 +105,8 @@ body{
  }
  .card-img{
   width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
  }
 
  .long{
@@ -126,7 +152,7 @@ body{
  }
  .footer-link{
      text-align: center;
-     color: black;
+     color: rgb(55, 207, 218);
      font-size: 1.3rem;
      padding:20px 0px;
      transition: all 0.3s ease-in-out;
@@ -142,3 +168,9 @@ body{
      padding:20px 0px;
  }
  
+ hr{
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
