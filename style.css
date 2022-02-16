@@ -139,16 +139,6 @@ body{
     right: 18vw;
 
  }
-
- hr{
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-}
-
-
-
  /* FOOTER  */
  footer{
      float: left;
@@ -178,3 +168,9 @@ body{
      padding:20px 0px;
  }
  
+ hr{
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}

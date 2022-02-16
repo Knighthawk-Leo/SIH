@@ -1,8 +1,34 @@
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  background: rgba(156, 227, 236, 0.527);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: rgba(121, 240, 248, 0.788);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+  background: rgb(36, 177, 219);
+  border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background: rgb(20, 103, 182);
+  border-radius: 10px;
+}
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 body{
   margin: 0;
@@ -12,6 +38,17 @@ body{
   background-size: cover;
   height: 100vh;
   overflow: hidden;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
 .center{
   position: absolute;
@@ -54,9 +91,10 @@ form .txt_field{
   margin: -5px 0 20px 5px;
   color: #a6a6a6;
   cursor: pointer;
+  transition: all .5s;
 }
 .pass:hover{
-  text-decoration: underline;
+  color: #66BFBF;
 }
 input[type="submit"]{
   width: 100%;
@@ -73,6 +111,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
   border-color: #2691d9;
   transition: .5s;
+  background-color: #75e0e0;
 }
 .signup_link{
   margin: 30px 0;
@@ -83,9 +122,10 @@ input[type="submit"]:hover{
 .signup_link a{
   color: #2691d9;
   text-decoration: none;
+  transition: all .5s;
 }
 .signup_link a:hover{
-  text-decoration: underline;
+  color:rgba(121, 240, 248, 0.788);
 }
 
 .img{
