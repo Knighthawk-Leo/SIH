@@ -4,82 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    -->
     <title>Artists</title>
 </head>
 <body>
-<!-- Nav Bar -->
-    <!-- <nav class="navbar navbar-light sticky-top bg-light" style="background-color:#1175bd;">
-        <div class="container-fluid">
-        <nav class="nav">
-            <a class="nav-link active" aria-current="page" href="#">Active</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled">Disabled</a>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </nav>
-        </div>
-      </nav> -->
-
-      <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: #e3f2fd;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Page 1</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Page 2</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-                <button class="btn btn-outline-success" type="submit" style="margin-right: 2vw;">Sign up</button>
-                <button class="btn btn-outline-success" type="submit" style="margin-right: 2vw;">Login</button>
-            </form>
-          </div>
-        </div>
+  <div class="top">
+    <header>
+      <img class="logo" src="images/logo.png" alt="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="xyz">Home</a></li>
+          <li><a href="xyz">Page 1</a></li>
+          <li><a href="xyz">Page 2</a></li>
+        </ul>
       </nav>
-
+      <a class="btn" href="xyz"><button>Sign up</button></a>
+      <a class="btn" href="xyz"><button>Login</button></a>
+    </header>
+  </div>
 <!-- Main Image  -->
       <img src="Imges/Blue BG.jpg" alt="Background" style="height: 100vh; width: 100%;">
     
     <h1>Title</h1>
     <p></p>
 <!-- Cards     -->
-        <div class="card" style="display: flexbox;width: 18rem; margin:2vh  3vw;">
+        <div class="card">
             <img src="Imges/Blue BG.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
           </div>
 <!-- isko line mai karna -->
-        <div class="card" style="display: flexbox ; width: 18rem; margin:2vh  3vw;">
+        <div class="card">
             <img src="Imges/Blue BG.jpg" class="card-img-top">
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
+            </div>
+            <div class="card">
+              <img src="Imges/Blue BG.jpg" class="card-img-top">
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+              </div>
           </div>
 
-
-
-
-
-
-
-    <!-- Footer  -->
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: black;">
+    <!-- Footer  
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color:#66bfbf;">
         <p class="col-md-4 mb-0 text-muted">© 2021 Company, Inc</p>
     
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
@@ -93,9 +70,16 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
         </ul>
-    </footer>
-    <!-- Bootstrap JS  -->
+    </footer> -->
+
+    <div class="bottom-section">
+      <a class="footer-link" href="https://www.linkedin.com/in/akshat-pandey-001a53147/">Home</a>
+      <a class="footer-link" href="https://www.facebook.com/profile.php?id=100004292898562">Features</a>
+      <a class="footer-link" href="https://www.instagram.com/_akshat._.pandey/?hl=en">Pricing</a>
+      <p class="copyright">© 2022 Company </p>
+    </div>
+    <!-- Bootstrap JS 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
+     -->
 </body>
 </html>
