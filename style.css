@@ -1,5 +1,5 @@
 html::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
   }
 
 html::-webkit-scrollbar-track {
@@ -116,11 +116,11 @@ body{
 	scroll-snap-type: x mandatory;
 	scroll-padding: 0px 1.25rem;
 	scrollbar-width: none;
-    
  }
- ::-webkit-scrollbar {
-    display: none;
+ .card-list::-webkit-scrollbar {
+    visibility: hidden;
 }
+
 .active {
     cursor: grab;
     cursor: -webkit-grab;
