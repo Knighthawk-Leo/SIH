@@ -78,7 +78,7 @@ form .txt_field{
   font-size: 16px;
 
 }
-.txt_field label{
+.txt_field label, .txt_field p{
   position: absolute;
   top: 50%;
   left: 5px;
@@ -86,6 +86,27 @@ form .txt_field{
   transform: translateY(-50%);
   font-size: 16px;
   transition: .5s;
+}
+
+.txt_field select{
+ 
+  font-size: 16px;
+}
+
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  height: 2px;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -9px;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
 }
 
 .pass{
