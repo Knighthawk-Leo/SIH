@@ -1,0 +1,163 @@
+*{
+      box-sizing: border-box;
+      margin:0;
+      padding:0;
+  }
+
+a,li,button{
+      text-decoration: none;
+      font-size: 15px;
+  }
+
+body{
+      background-color: #c6d3be;
+      height: 200vh;
+  }
+
+  /* Top Bar  */
+#top{
+      height: 6vh;
+      background-color: #77a721;
+  }
+
+  /* Header  */
+header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: white;
+        color: aliceblue;
+  }
+
+.logo{
+        height: 8vh;
+        cursor: pointer;
+  }
+
+.navitems{
+      list-style: none;    
+  }
+.navitems li{
+      display: inline-block;
+      padding: 0 20px;    
+  }
+.navitems li a{
+      transition: all 0.3s ease 0s;
+      color: #26360a;
+  }
+  
+.navitems li a:hover{
+      color:green;
+  }
+
+button{
+      padding:9px 25px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease 0s;
+      background-color: #77a721; 
+  }
+
+button:hover{
+      background-color:#a5d154 ;
+  }
+
+  /* Image Text  */
+.CenterText{
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 50px;
+  }
+  
+.CenterBtn{
+  position: absolute; 
+  left: 50%; 
+  top:60%;
+  transform: translate(-50%, -50%);
+}  
+
+  /* Card  */
+.cardList{
+      position: absolute;
+      top:110vh;
+      margin: 0px 3vw;
+      display: inline-flex;
+  }
+.Card{
+      position: relative;
+      /* height: 180px; */
+      /* width: 170px; */
+      background-color: #e1e8dc;
+      border-radius: 20px;
+      margin: 0 2vw;
+      padding: 1em;
+  }
+  .Card>p{
+    padding:2vh 1vw;
+    /* Center pe karna hai */
+  }
+
+  .CardImg{
+    width: 25vh;
+  }
+
+.Next{
+    margin:20vh 3vw;
+    height: 90vh;
+    border-radius: 20px;
+    position: relative;
+    background-color: #EAF6F6;
+}
+.Next> img{
+    height: 80vh;
+    margin: 5vh 2vw;
+    position: relative;
+    float: inline-start;
+}
+.Next>p{
+    position: absolute;
+    right: 15vw;
+    float: right;
+    font-size: 5rem;
+    margin:10vh 5vw;
+}
+
+    /* FOOTER  */
+ footer{
+    background-color: #69bf71;
+    padding:50px 0 20px 0;
+    /* Temporary */
+    margin: 1000px 0 0 0;  
+
+    width: 100%;
+    text-align: center;
+}
+.footer-link{
+    text-align: center;
+    color: #163519;
+    font-size: 1.3rem;
+    padding:20px 0px;
+    transition: all 0.3s ease-in-out;
+    margin: 0px 2vw;
+}
+
+.footer-link:hover{
+    color: #1a1a1a;
+}
+.copyright{
+    color:black;
+    font-size: 1rem;
+    padding:20px 0px;
+}
+
+hr{
+   border: dotted #EAF6F6 6px;
+   border-bottom: none;
+   width: 4%;
+   margin: 100px auto;
+}
